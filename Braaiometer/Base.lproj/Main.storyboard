@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OyR-b2-nzn">
+                                <rect key="frame" x="127" y="211" width="120" height="120"/>
+                                <color key="backgroundColor" red="1" green="0.73229799520381111" blue="0.35863088655272335" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="XiQ-U3-LSs"/>
+                                    <constraint firstAttribute="width" constant="120" id="dK8-vF-PoR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n77-Rl-Exf">
+                                <rect key="frame" x="0.0" y="634" width="375" height="33"/>
+                                <color key="backgroundColor" red="0.52525044631302875" green="1" blue="0.56101510264700183" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32.5" id="BBh-aw-CeK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32 ˚C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyt-OW-WaM">
+                                <rect key="frame" x="127" y="251" width="120" height="39"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OqA-T9-3vY">
+                                <rect key="frame" x="285" y="596" width="74" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OL5-bd-9Y7"/>
+                                    <constraint firstAttribute="width" constant="74" id="b3y-Yl-yOn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <state key="normal" title="Reconnect">
+                                    <color key="titleColor" red="0.47058823529411764" green="1" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctk-ka-7sM">
+                                <rect key="frame" x="16" y="594" width="74" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="UvY-Xn-iON"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <state key="normal" title="Disconnect">
+                                    <color key="titleColor" red="1" green="0.10015009929157537" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Braaiometer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nU8-dH-Ij6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="39"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.6403577381992962" blue="0.44116607440921296" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="nU8-dH-Ij6" secondAttribute="centerX" id="F7E-2u-CTZ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="n77-Rl-Exf" secondAttribute="bottom" id="ICc-EO-mmd"/>
+                            <constraint firstAttribute="centerY" secondItem="OyR-b2-nzn" secondAttribute="centerY" constant="62.5" id="LKy-Nx-Mqd"/>
+                            <constraint firstItem="OqA-T9-3vY" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="MOS-oK-rHy"/>
+                            <constraint firstItem="ctk-ka-7sM" firstAttribute="bottom" secondItem="OqA-T9-3vY" secondAttribute="bottom" id="ZFP-T6-OKx"/>
+                            <constraint firstItem="nU8-dH-Ij6" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="c6z-ck-CGI"/>
+                            <constraint firstAttribute="centerX" secondItem="OyR-b2-nzn" secondAttribute="centerX" constant="0.5" id="cCd-nG-c2m"/>
+                            <constraint firstItem="oyt-OW-WaM" firstAttribute="width" secondItem="OyR-b2-nzn" secondAttribute="width" id="fUl-oA-8Q8"/>
+                            <constraint firstAttribute="trailing" secondItem="n77-Rl-Exf" secondAttribute="trailing" id="h74-vR-ESv"/>
+                            <constraint firstItem="oyt-OW-WaM" firstAttribute="centerY" secondItem="OyR-b2-nzn" secondAttribute="centerY" id="hYo-gZ-Etq"/>
+                            <constraint firstItem="nU8-dH-Ij6" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="mTo-s6-1qU"/>
+                            <constraint firstItem="oyt-OW-WaM" firstAttribute="centerX" secondItem="OyR-b2-nzn" secondAttribute="centerX" id="qUe-2x-vj8"/>
+                            <constraint firstItem="n77-Rl-Exf" firstAttribute="top" secondItem="ctk-ka-7sM" secondAttribute="bottom" constant="8" symbolic="YES" id="rkr-lK-jsP"/>
+                            <constraint firstItem="ctk-ka-7sM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="tEd-J9-Sdf"/>
+                            <constraint firstItem="n77-Rl-Exf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="xEa-Vm-UrM"/>
+                            <constraint firstItem="nU8-dH-Ij6" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="zQb-yF-Ufw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mTo-s6-1qU"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="label" destination="oyt-OW-WaM" id="sr8-tg-f7h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
